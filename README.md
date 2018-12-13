@@ -22,7 +22,7 @@ Host: 192.168.1.100:9000
 
 Init Coinview SDK with debug on.
 ```
-const app = await coinview.init(YOUR_APP_ID, true, '192.168.1.10')
+const app = await coinview.init(YOUR_APP_ID, true, '192.168.1.100:9000')
 ```
 
 Print your log
@@ -31,3 +31,10 @@ coinview.log('TAG', 'Hello world!')
 ```
 
 Done!
+
+## Use other port
+```
+PORT=9001 coinview-dapp-debugger
+
+Host: 192.168.1.100:9001
+```
